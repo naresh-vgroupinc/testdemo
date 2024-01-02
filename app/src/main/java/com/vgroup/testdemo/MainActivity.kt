@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.vgroup.mylibrary.MyLibClass
 import com.vgroup.testdemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+//        var mycls = MyLibClass()
+//        mycls.showToast()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
