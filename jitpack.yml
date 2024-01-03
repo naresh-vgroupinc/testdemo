@@ -1,9 +1,16 @@
 # configuration file for building snapshots and releases with jitpack.io
+
 jdk:
-  - openjdk17
-before_install:
-  - ./scripts/prepareJitpackEnvironment.sh
+  - openjdk11
 install:
-  - FILE="-Dfile=demotest.aar" #com-atifqamar-customtoast.aar
-  - mvn install:install-file $FILE -DgroupId=com.github.naresh-vgroupinc -DartifactId=com-vgroup-mylibrary -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
-  #com.github.geek-atif                      #com-atifqamar-customtoast  #1.0
+  - ./gradlew :moka:build :moka:publishToMavenLocal -x :moka:test
+  - find . -name "*.aar"
+
+#jdk:
+#  - openjdk17
+#before_install:
+#  - ./scripts/prepareJitpackEnvironment.sh
+#install:
+#  - FILE="-Dfile=demotest.aar" #com-atifqamar-customtoast.aar
+#  - mvn install:install-file $FILE -DgroupId=com.github.naresh-vgroupinc -DartifactId=testdemo -Dversion=1.1 -Dpackaging=aar -DgeneratePom=true
+#  #com.github.geek-atif                      #com-atifqamar-customtoast  #1.0
