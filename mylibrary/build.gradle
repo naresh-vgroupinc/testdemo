@@ -89,21 +89,21 @@ dependencies {
 
 // 5. Add below line
 //===============================
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'com.github.naresh-vgroupinc'
-            artifactId = 'testdemo'
-            version = "1.1"
-            pom {
-                description = 'First release'
-            }
-        }
-    }
-    repositories {
-        mavenLocal()
-    }
-}
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.github.naresh-vgroupinc'
+//            artifactId = 'testdemo'
+//            version = "1.2"
+//            pom {
+//                description = 'release'
+//            }
+//        }
+//    }
+//    repositories {
+//        mavenLocal()
+//    }
+//}
 
 task androidSourcesJar(type: Jar) {
     classifier 'sources'
@@ -116,7 +116,7 @@ afterEvaluate{
                 from components.release
                 groupId = 'com.github.naresh-vgroupinc'
                 artifactId = 'testdemo'
-                version = "1.1"
+                version = "1.2"
             }
 
         }
