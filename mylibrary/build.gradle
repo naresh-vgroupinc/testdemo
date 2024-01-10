@@ -40,7 +40,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            consumerProguardFiles 'consumer-rules.pro' //3. Add this line
+//            consumerProguardFiles 'consumer-rules.pro' //3. Add this line
         }
     }
     compileOptions {
@@ -64,17 +64,17 @@ android {
 
 // 4. Add below line
 //===============================
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)        // << --- ADD This
-    }
-}
-//===============================
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
-    targetCompatibility = JavaVersion.VERSION_17
-}
+//java {
+//    toolchain {
+//        languageVersion = JavaLanguageVersion.of(17)        // << --- ADD This
+//    }
+//}
+////===============================
+//
+//java {
+//    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+//    targetCompatibility = JavaVersion.VERSION_17
+//}
 
 dependencies {
 
@@ -115,7 +115,7 @@ task androidSourcesJar(type: Jar) {
             release(MavenPublication){
                 groupId = 'com.github.naresh-vgroupinc'
                 artifactId = 'mylibrary'
-                version = "1.7"
+                version = "1.8"
             }
 //            afterEvaluate {
 //                from components.release

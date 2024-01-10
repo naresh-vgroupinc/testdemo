@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import com.vgroup.testdemo.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        var mycls = MyLibClass()
 //        mycls.showToast()
+//        var mycls = MyL()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
