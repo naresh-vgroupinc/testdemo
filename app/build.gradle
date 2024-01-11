@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace 'com.vgroup.testdemo'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.vgroup.testdemo"
         minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.9"
+        targetSdk 34
+        versionCode 2
+        versionName "2.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,9 +35,9 @@ android {
     buildFeatures {
         viewBinding true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion '1.4.0'
-    }
+//    composeOptions {
+//        kotlinCompilerExtensionVersion '1.4.0'
+//    }
 }
 
 dependencies {
