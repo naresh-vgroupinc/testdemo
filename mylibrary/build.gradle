@@ -115,7 +115,7 @@ task androidSourcesJar(type: Jar) {
             release(MavenPublication){
                 groupId = 'com.github.naresh-vgroupinc'
                 artifactId = 'mylibrary'
-                version = "2.1"
+                version = "2.2"
             }
 //            afterEvaluate {
 //                from components.release
