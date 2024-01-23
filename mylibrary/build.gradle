@@ -25,7 +25,7 @@ plugins {
 }
 
 android {
-//    namespace 'com.vgroup.mylibrary'
+    namespace 'com.vgroup.mylibrary'
     compileSdk 34
 
     defaultConfig {
@@ -94,7 +94,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.naresh-vgroupinc'
             artifactId = 'mylibrary'
-            version = "2.3"
+            version = "2.4"
             pom {
                 description = 'release'
             }
