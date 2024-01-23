@@ -94,7 +94,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.naresh-vgroupinc'
             artifactId = 'mylibrary'
-            version = "2.4"
+            version = "2.5"
             pom {
                 description = 'release'
             }
