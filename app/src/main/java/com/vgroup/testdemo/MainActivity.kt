@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
+import com.vgroup.mylibrary.MyLibClass
 import com.vgroup.testdemo.databinding.ActivityMainBinding
 
 
@@ -19,8 +20,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        var mycls = MyLibClass()
-//        mycls.showToast()
+        var mycls = MyLibClass()
+//        context
+        mycls.showToast(applicationContext,"Hello")
 //        var mycls = MyL()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
